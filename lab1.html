@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- here our nav  -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="https://iti.gov.eg/home" target="_blank">ITI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0  mt-2 mt-lg-0" id="navbarSupportedContent">
+            <form class="d-flex   mt-md-2 mt-lg-0" method="post" action="">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+<!-- here our signup form -->
+<div class="container mt-3 col-md-12 col-lg-6 mb-4 ">
+    <form class="needs-validation" novalidate>
+      <div class="mt-3">
+        <label for="fName" class="form-label">First name *</label>
+        <input type="text" class="form-control" id="fName" value="" required>
+        <div class="valid-feedback">
+         FirstName is valid!
+        </div>
+      </div> 
+        <div class="mb-3 mt-3">
+          <label for="lName" class="form-label">LastName *</label>
+          <input type="text" class="form-control" id="lName" required>
+          <div class="valid-feedback">
+            LastName is valid!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email *</label>
+          <input type="email" class="form-control" id="Email"  required>
+          <div class="valid-feedback">
+            Email is valid!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password *</label>
+          <input type="password" class="form-control" id="password"  required>
+          <div class="valid-feedback">
+            Password is valid!
+          </div>
+        </div>
+<div class="mb-3">Gender *</div>
+       <div class="form-check ">
+  <input class="form-check-input" type="radio" name="gender" id="male1">
+  <label class="form-check-label" for="male1">
+Male
+  </label>
+</div>
+
+<div class="form-check ">
+  <input class="form-check-input" type="radio" name="gender" id="female1">
+  <label class="form-check-label" for="female1">
+   Female
+  </label>
+</div>
+
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1">agree terms and condtions ?</label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary  col-sm-12 col-lg-2">SignUp</button>
+      </form>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/validate.js"></script>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
